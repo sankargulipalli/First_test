@@ -16,9 +16,11 @@ object read_input
     i+=1
    
     }
-    printf("color_list:"+ color_list)
     
-  }
+   printf("color_list:"+ color_list)
+   val rdd1=color_list.map(x=>(x,1))
+   println(rdd1)
+    }
    def main(args: Array[String]): Unit = {
     read_method()
     
