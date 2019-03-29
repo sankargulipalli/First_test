@@ -16,10 +16,9 @@ object read_input
     i+=1
    
     }
-    
-   printf("color_list:"+ color_list)
-   val rdd1=color_list.map(x=>(x,1))
-   println(rdd1)
+    println("color_list:"+ color_list)
+   val rdd1=color_list.distinct.map(x=>color_list.count(_==x)/2).sum
+    println(rdd1)
     }
    def main(args: Array[String]): Unit = {
     read_method()
