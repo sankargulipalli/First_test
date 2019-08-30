@@ -16,6 +16,7 @@ object singleten_class {
     val int_set=Set(12,45,45,7,8,89,89,62)
     println("we have added the new set to eleminated the duplicated values")
     int_set.foreach(println)
+    print("new update")
      
     println("Length of list is="+int_list.length)
   }
